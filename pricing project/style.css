@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+}
+nav a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+nav a:hover {
+  background-color: #575757;
+}
+.hero {
+  text-align: center;
+  padding: 30px 15px;
+  background: #0073e6;
+  color: white;
+}
+.plans__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.plans {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+.plansHero__title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.plansHero__subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+.planItem__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.planItem {
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.planItem--free {
+  background: #e0f7fa;
+  border: 1px solid #b2ebf2;
+}
+.planItem--pro {
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+}
+.planItem--entp {
+  background: #fce4ec;
+  border: 1px solid #f8bbd0;
+}
+.planItem:hover {
+  transform: scale(1.05);
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card__icon {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card__icon.symbol--rounded {
+  background: #0073e6;
+}
+.card__desc {
+  margin-bottom: 15px;
+}
+.price {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.price span {
+  font-size: 0.5em;
+  color: #666;
+}
+.featureList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+.featureList li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+.featureList .disabled {
+  color: #999;
+  text-decoration: line-through;
+}
+.button {
+  background: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.button.button--pink {
+  background: #e91e63;
+}
+.button.button--white {
+  background: white;
+  color: #0073e6;
+  border: 1px solid #0073e6;
+}
+.label {
+  background: #ffeb3b;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.label img {
+  margin-right: 5px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .planItem {
+    max-width: 100%;
+  }
+}
